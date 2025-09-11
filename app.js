@@ -11,10 +11,14 @@ form.addEventListener('submit', (e) => {
 });
 
 function addItem(text) {
-  const li = document.createElement('li');
-  li.textContent = text;
-  li.addEventListener('click', () => toggleDone(li));
-  list.appendChild(li);
+  if (text.length >= 3) {
+    const li = document.createElement('li');
+    li.textContent = text;
+    li.addEventListener('click', () => toggleDone(li));
+    list.appendChild(li);
+  } else {
+    alert("O texto precisa ter pelo menos 3 caracteres!");
+  }
 }
 
 
