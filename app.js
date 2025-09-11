@@ -19,5 +19,5 @@ function addItem(text) {
 
 // Função alvo de CONFLITO na Aula 2:
 function toggleDone(li) {
-  li.classList.toggle('done');
+  li.classList.toggle('done ✅');
 }
