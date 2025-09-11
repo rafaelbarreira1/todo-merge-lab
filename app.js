@@ -16,7 +16,9 @@ function addItem(text) {
     li.textContent = text;
     li.addEventListener('click', () => toggleDone(li));
     list.appendChild(li);
-  } 
+  } else {
+    alert("O texto precisa ter pelo menos 3 caracteres!");
+  }
 }
 
 
